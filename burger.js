@@ -13,20 +13,3 @@ navLink.forEach(function (navLink) {
     });
 });
 
-function checkTask(){ 
-return new Promise(resolve,reject) => {
-setTimeout(()=> {
-resolve("there");    
-}, 1000);
-};
-    }
-checkTask.then(function(resolved) =>{
-console.log(resolved);
-               }).catch(function(error){
-console.log(error);
-               });
-
-let animDur = 3000;
-let frameDur = 1000/60;
-let totalDur = animDur / frameDur;
-

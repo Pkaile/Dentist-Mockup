@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Roboto, monospace;
+    font-family: 'Roboto', monospace;
 }
 
 texarea {
@@ -32,7 +32,6 @@ html {
     height: 15rem;
     margin: auto;
     margin-bottom: 3rem;
-
     border-radius: 100%;
 
 }
@@ -86,17 +85,15 @@ header {
 .container {
     padding-bottom: 1rem !important;
     background:
-        url(toothbrush.jpeg) no-repeat center center;
+    url(toothbrush.jpeg) no-repeat center center;
     background-size: 100%;
-    /*    background-blend-mode: difference*/
 }
 
 .container2 {
     padding-bottom: 12rem !important;
     background:
-        url(toothbrush.jpeg) no-repeat center center;
+    url(toothbrush.jpeg) no-repeat center center;
     background-size: 100%;
-    /*    background-blend-mode: difference*/
 }
 
 .shadowtext {
@@ -135,17 +132,14 @@ header {
 }
 
 .bg-1 {
-    /*    border-radius: 2%;*/
     background-color: #001233;
 }
 
 .bg-2 {
-    /*    border-radius: 2%;*/
     background-color: #001233;
 }
 
 .bg-3 {
-    /*    border-radius: 2%;*/
     background-color: #001233;
 }
 
@@ -157,21 +151,16 @@ header {
 .bg-gray {
     background-color: whitesmoke;
 }
-
-.btn-primary:hover {}
-
 .img {
     width: 200px;
     height: 200px;
     object-fit: cover;
-
 }
 
 .cta-border {
     font-weight: 400;
     color: #f1faee;
     background-color: #14213d;
-
 }
 
 .cta2-image-1 {
@@ -363,7 +352,6 @@ border-bottom: 1px solid darkgray;
         left: 1rem;
         z-index: 1;
         display: block;
-
     }
 
     .appear {
@@ -386,6 +374,5 @@ border-bottom: 1px solid darkgray;
     transform:translateY(1.2rem) rotate(-45deg);
     transition:0.3s ease all;
         background-color: darkred;
-
     }
 }    
