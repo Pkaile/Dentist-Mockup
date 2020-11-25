@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Roboto', monospace;
 }
 
 texarea {
@@ -11,9 +10,12 @@ texarea {
 
 a {
     text-decoration: none !important;
+  color:blue!important;
+    font-weight: bold;
 }
 
 html {
+    font-family: 'Roboto', monospace;
     scroll-behavior: smooth;
 }
 
@@ -24,7 +26,6 @@ html {
     margin: auto;
     display: flex;
     align-items: center;
-
 }
 
 .cover-cta {
@@ -280,10 +281,7 @@ header {
     background-size: auto 100%;
 
 }
-a{
-    color:white!important;
-    font-weight: bold;
-}
+
 a:focus{
     color:gray!important;
     border-bottom: 1px solid white!important;
