@@ -1,0 +1,391 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, monospace;
+}
+
+texarea {
+    resize: none;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#main-nav {
+    background-color: whitesmoke;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+
+}
+
+.cover-cta {
+    width: 15rem;
+    height: 15rem;
+    margin: auto;
+    margin-bottom: 3rem;
+
+    border-radius: 100%;
+
+}
+
+.bg-smoke {
+    background-color: #f1faee;
+    border-radius: 2rem;
+    padding-bottom: 3rem;
+}
+
+#diamond {
+
+    background: url(Diamond.jpg) no-repeat center center;
+    background-size: 100% auto;
+}
+
+#diamond2 {
+
+    background: url(toothbrush.jpeg) no-repeat center center;
+    background-size: 100% auto;
+}
+
+#diamond3 {
+
+    background: url(dentistChair.jpeg) no-repeat center center;
+    background-size: 140% auto;
+}
+
+#navbar {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+}
+
+#logo {
+    margin-left: 1rem;
+    margin-right: auto;
+}
+
+li {
+    text-align: center;
+    padding: .4rem;
+    list-style: none;
+}
+
+header {
+    margin-bottom: 2rem;
+}
+
+.container {
+    padding-bottom: 1rem !important;
+    background:
+        url(toothbrush.jpeg) no-repeat center center;
+    background-size: 100%;
+    /*    background-blend-mode: difference*/
+}
+
+.container2 {
+    padding-bottom: 12rem !important;
+    background:
+        url(toothbrush.jpeg) no-repeat center center;
+    background-size: 100%;
+    /*    background-blend-mode: difference*/
+}
+
+.shadowtext {
+    background-color: rgba(33, 210, 253, 1);
+}
+
+.shadowtext-black {
+    text-shadow: 2px 2px black;
+}
+
+.burger {
+    display: none;
+    margin-left: auto;
+}
+
+.burger div {
+    width: 2rem;
+    margin: .2rem;
+    height: .4rem;
+    background-color: darkgray;
+}
+
+#cta {
+    text-align: center;
+    margin: auto;
+    padding: 1rem;
+}
+
+#cta2 {
+    margin: auto;
+    background-color: #f1faee;
+}
+
+#cta2 div {
+    margin: auto;
+}
+
+.bg-1 {
+    /*    border-radius: 2%;*/
+    background-color: #001233;
+}
+
+.bg-2 {
+    /*    border-radius: 2%;*/
+    background-color: #001233;
+}
+
+.bg-3 {
+    /*    border-radius: 2%;*/
+    background-color: #001233;
+}
+
+.btn-primary {
+    background-color: #14213d !important;
+    border: none !important;
+}
+
+.bg-gray {
+    background-color: whitesmoke;
+}
+
+.btn-primary:hover {}
+
+.img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+
+}
+
+.cta-border {
+    font-weight: 400;
+    color: #f1faee;
+    background-color: #14213d;
+
+}
+
+.cta2-image-1 {
+    background: url(Linda.jpg) no-repeat center center;
+}
+
+.cta2-image-2 {
+    background: url(dentistCHair.jpeg) no-repeat center center;
+}
+
+.cta2-image-3 {
+    background: url(dentist.jpeg) no-repeat center center;
+}
+
+.cover {
+    height: 100%;
+    width: 100%;
+    color: white;
+    filter: grayscale(100%);
+    padding-top: 36%;
+    background-size: 100% auto;
+}
+
+.cover:hover {
+    filter: grayscale(0%);
+    transition: linear 0.3s all;
+}
+
+.dentist {
+    background: url(Dentist.png)no-repeat center right;
+    background-size: auto 100%;
+}
+
+#about {
+    margin: auto
+}
+
+#card {
+
+    margin-top: 5% !important;
+    margin-left: 20% !important;
+}
+
+.dr-text {
+    margin-left: 40%;
+}
+
+.label-holder {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.label-holder input {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    padding: 1rem;
+    border: none;
+    outline: none;
+}
+
+.label-name {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-bottom: 2px solid lightgray;
+    pointer-events: none;
+}
+
+.label-name:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    border-bottom: 2px solid #14213d;
+}
+
+.label-push {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+    pointer-events: none;
+    color: gray;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.label-holder input:focus + .label-name .label-push,
+.label-holder input:not(:placeholder-shown) + .label-name .label-push {
+    transform: translateY(-40%);
+    font-size: 15px;
+    color: #14213d;
+    transition: ease 0.3s all;
+}
+
+.label-holder input:focus + .label-name:after,
+.label-holder input:not(:placeholder-shown) + .label-name:after {
+    transform: translateX(0%);
+    transition: ease 0.3s all;
+}
+
+.dentist2 {
+    width: 10rem !important;
+    height: auto;
+    padding: 8rem;
+    background: url(Dentist.png)no-repeat center center;
+    background-size: auto 100%;
+
+}
+a{
+    color:white!important;
+    font-weight: bold;
+}
+a:focus{
+    color:gray!important;
+    border-bottom: 1px solid white!important;
+}
+@media (max-width:800px) {
+    .nav-link{
+border-bottom: 1px solid darkgray;
+    }
+    #logo{
+        top:0;
+        position: absolute;
+        margin: auto;
+        width: 100%;
+    }
+    
+    #card {
+        margin: 0 !important;
+        background-color: whitesmoke;
+    }
+
+    .dentist {
+        background-image: none;
+    }
+
+    .container {
+        background: none;
+        padding: 0 !important;
+    }
+
+    .dr-text {
+        margin-left: 0%;
+        text-align: center;
+    }
+
+    .navbar {
+        width: 100vh;
+        height: 10vh;
+        overflow: hidden;
+        display: flex;
+        flex-direction:column;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: auto;
+        text-align: center;
+        z-index: 1;
+        transform: translateY(-150%);
+        transition: 0.3s ease all;
+    }
+    #main-nav{
+        width: 100%;
+        height:100%;
+        background-color: black;
+        position: relative;
+        margin-bottom: 5rem;
+        height: auto;
+
+    }
+    .close-btn {
+        display: none;
+    }
+
+    .burger {
+        position: absolute;
+        top: 1.6rem;
+        left: 1rem;
+        z-index: 1;
+        display: block;
+
+    }
+
+    .appear {
+        height:30vh;
+          margin-top: 6rem;
+        position: absolute;
+        transform: translateY(0%);
+    }
+    .burger.close .line2{
+        opacity:0;
+        transform: translateX(-2rem);
+          transition: 0.3s ease all;
+    }
+    .burger.close .line3{
+    transform: rotate(45deg);
+        transition: 0.3s ease all;
+        background-color: red;
+    }
+     .burger.close .line1{
+    transform:translateY(1.2rem) rotate(-45deg);
+    transition:0.3s ease all;
+        background-color: darkred;
+
+    }
+}    
